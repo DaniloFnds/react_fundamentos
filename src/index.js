@@ -1,7 +1,5 @@
 import ReactDom from 'react-dom'
+import React from 'react'
 
-
-//pegar o elemento root da div
-const el = document.getElementById('root')
-//ele vai renderizar dentro do element com id root
-ReactDom.render('Ola React', el)
+//para funcionar um html dentro do react precisamos importar o react
+ReactDom.render(<div>Ola react</div>, document.getElementById('root'))
