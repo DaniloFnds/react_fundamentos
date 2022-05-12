@@ -5,9 +5,7 @@ import React from 'react'
 import './index.css'
 
 //importar um component
-import Primeiro from './components/basicos/Primeiro'
-import ComParametro from "./components/basicos/ComParametro";
-
+import App from './App'
 
 //para funcionar um html dentro do react precisamos importar o react
 // ReactDom.render(<div>Ola react</div>,
@@ -18,7 +16,4 @@ import ComParametro from "./components/basicos/ComParametro";
 
 
 //passando parametros para um component
-ReactDom.render(<div>
-    <Primeiro/>
-    <ComParametro titulo="Segundo COmponssent" subtitulo="Subtitulssso"/>
-</div>, document.getElementById('root'))
+ReactDom.render(<App/>, document.getElementById('root'))
