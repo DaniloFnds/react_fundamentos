@@ -16,8 +16,9 @@ export default () => {
     return (
         <div>
             <Card titulo="Desafio Aleatorio" color={"#090"}>
-                <Familia sobrenome={"Ferreira"}></Familia>
-                <FamiliaMembro/>
+                <Familia sobrenome={"Ferreira"}>
+                    <FamiliaMembro/>
+                </Familia>
             </Card>
             <Card titulo="Desafio Aleatorio" color={"#090"}>
                 <NumeroAleatorio min={1} max={10}/>
