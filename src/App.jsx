@@ -14,12 +14,20 @@ import TabelaProduto from "./components/repeticao/TabelaProduto";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import IndiretaPai from "./components/comunicao/IndiretaPai";
+import Input from "./components/formulario/Input";
+import Contador from "./components/classes/Contador";
 
 //podemos colocar o underline dizendo q nao vai poassar nada como parametros
 //ou colocar default ()
 export default () => {
     return (
         <div>
+            <Card>
+                <Contador numeroInicial={10}></Contador>
+            </Card>
+            <Card>
+                <Input/>
+            </Card>
             <Card>
                 <IndiretaPai></IndiretaPai>
             </Card>
